@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/countbg"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/infoBtn2"
+        android:layout_width="77dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/panelbg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/cogwheel"
+        android:textColor="@color/white2"
+        android:textSize="66sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoBtn2"
+        app:layout_constraintVertical_bias="0.202">
+
+        <CheckBox
+            android:id="@+id/touchCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counting by Touch"
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/btnCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counting by Headphone Button"
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/shkCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counting by Shaking the Phone "
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Shake Sensitivity"
+            android:textColor="@color/white2" />
+
+        <SeekBar
+            android:id="@+id/shakeSense"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="6"
+            android:progress="3" />
+
+        <CheckBox
+            android:id="@+id/screenCheck2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prevent screen from turning OFF"
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/negCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Negative numbers"
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/vibCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Vibration"
+            android:textColor="@color/white2"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

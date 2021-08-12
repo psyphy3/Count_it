@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Countr</string>
+    <string name="down">\u25bc</string>
+    <string name="reset">\u27f3</string>
+    <string name="lock">\uD83D\uDD12</string>
+    <string name="cogwheel">\u2699</string>
+    <string name="phone">\uf4f1</string>
+
+    <string name="thanks">
+    Thanks for checking out the app!\n
+    Support me by paying what you can and unlock all the features.
+    </string>
+</resources>
